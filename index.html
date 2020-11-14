@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Izzy's Pizza Palace</title>
+   <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.css">
+   <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body id="page">
+    <h1>Izzy's Pizza Palace</h1>
+    <div class="container">
+        <nav>
+            <ul id="tabs" class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#pizza">Pizza</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#delivery">Delivery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#confirmation">Confirmation</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="tab-content">
+            <div id="pizza" class="tab-pane active">
+                <h2>Choose Pizza Details</h2>
+                <p>Choose Your Pizza Size</p>
+                <form>
+                    <input type="radio" name="size" id="small" value="7.00">
+                    <label for="small">Small $7</label>
+                    <br>
+                    <input type="radio" name="size" id="medium" value="9.00">
+                    <label for="medium">Medium $9</label>
+                    <br>
+                    <input type="radio" name="size" id="large" value="12.00">
+                    <label for="large">Large $12</label>
+                </form>
+                <br>
+                <p>Choose Your Crust Type</p>
+                <form>
+                    <input type="radio" name="crust" id="thin">
+                    <label for="thin">Thin</label>
+                    <br>
+                    <input type="radio" name="crust" id="pan">
+                    <label for="pan">Pan</label>
+                    <br>
+                    <input type="radio" name="crust" id="gluten-free">
+                    <label for="gluten-free">Gluten Free</label>
+                </form>
+                <br>
+                <p>What meats would you like to add?($1.50 each)</p>
+                <form>
+                    <input type="checkbox" name="meat" id="pepperoni" value="1.50">
+                    <label for="pepperoni">Pepperoni</label>
+                    <br>
+                    <input type="checkbox" name="meat" id="sausage" value="1.50">
+                    <label for="sausage">Sausage</label>
+                    <br>
+                    <input type="checkbox" name="meat" id="ham" value="1.50">
+                    <label for="ham">Ham</label>
+                    <br>
+                    <input type="checkbox" name="meat" id="bacon" value="1.50">
+                    <label for="bacon">Bacon</label>
+                </form>
+                <br>
+                <p>What veggies would you like to add?($1.00 each)</p>
+                <form>
+                    <input type="checkbox" name="veggies" id="tomato" value="1.00">
+                    <label for="tomato">Tomato</label>
+                    <br>
+                    <input type="checkbox" name="veggies" id="mushroom" value="1.00">
+                    <label for="mushroom">Mushroom</label>
+                    <br>
+                    <input type="checkbox" name="veggies" id="spinach" value="1.00">
+                    <label for="spinach">Spinach</label>
+                    <br>
+                    <input type="checkbox" name="veggies" id="onion" value="1.00">
+                    <label for="onion">Onion</label>
+                </form>
+                <img>
+                <br>
+                <button class="pizza-button">Submit Pizza Order</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="delivery" class="tab-pane">
+                    <h2>Enter Delivery Information</h2>
+                    <form>
+                        <label for="name">Full Name</label>
+                        <input type="text" name="delivery-info" id="name">
+                        <br>
+                        <label for="address">Address</label>
+                        <input type="text" name="delivery-info" id="address">
+                        <br>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="delivery-info" id="phone">
+                    </form>
+                    <br>
+                    <button class="delivery-button">Submit Delivery Information</button>
+                </div>
+
+                <div class="tab-content">
+                    <div id="confirmation" class="tab-pane">
+                        <h2>Order Confirmation</h2>
+                        <br>
+                        <button id="confirmOrder">Confirm Order</button>
+                        <p id="confirmOutput"></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+    <!--jQuery-->
+    <script src="jquery-3.5.1.js"></script>
+   <!-- Bootstrap-->
+    <script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+    <!--My JavaScript-->
+    <script src="code.js"></script>
+</body>
+</html>

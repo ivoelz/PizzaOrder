@@ -1,0 +1,33 @@
+body {
+    padding: 25px;
+    background-image: url("pizza3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: black;
+}
+
+.tab-pane {
+    padding: 10px
+}
+
+#pizza {
+    background-color: #bf873b;
+}
+
+#delivery {
+    background-color: #e12301;
+}
+
+#confirmation {
+    background-color: forestgreen;
+}
