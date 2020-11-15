@@ -25,72 +25,61 @@
                 </li>
             </ul>
         </nav>
-
+        <form>
         <div class="tab-content">
             <div id="pizza" class="tab-pane active">
                 <h2>Choose Pizza Details</h2>
                 <p>Choose Your Pizza Size</p>
-                <form>
-                    <input type="radio" name="size" id="small" value="7.00">
+                    <input type="radio" name="size" id="small" data-price="7.00" value="Small">
                     <label for="small">Small $7</label>
                     <br>
-                    <input type="radio" name="size" id="medium" value="9.00">
+                    <input type="radio" name="size" id="medium" data-price="9.00" value="Medium">
                     <label for="medium">Medium $9</label>
                     <br>
-                    <input type="radio" name="size" id="large" value="12.00">
+                    <input type="radio" name="size" id="large" data-price="12.00" value="Large">
                     <label for="large">Large $12</label>
-                </form>
                 <br>
                 <p>Choose Your Crust Type</p>
-                <form>
-                    <input type="radio" name="crust" id="thin">
+                    <input type="radio" name="crust" id="thin" value="Thin Crust">
                     <label for="thin">Thin</label>
                     <br>
-                    <input type="radio" name="crust" id="pan">
+                    <input type="radio" name="crust" id="pan" value="Pan Crust">
                     <label for="pan">Pan</label>
                     <br>
-                    <input type="radio" name="crust" id="gluten-free">
+                    <input type="radio" name="crust" id="gluten-free" value="Gluten Free Crust">
                     <label for="gluten-free">Gluten Free</label>
-                </form>
                 <br>
                 <p>What meats would you like to add?($1.50 each)</p>
-                <form>
-                    <input type="checkbox" name="meat" id="pepperoni" value="1.50">
+                    <input type="checkbox" name="meat" id="pepperoni" data-price="1.50" value="Pepperoni">
                     <label for="pepperoni">Pepperoni</label>
                     <br>
-                    <input type="checkbox" name="meat" id="sausage" value="1.50">
+                    <input type="checkbox" name="meat" id="sausage" data-price="1.50" value="Sausage">
                     <label for="sausage">Sausage</label>
                     <br>
-                    <input type="checkbox" name="meat" id="ham" value="1.50">
+                    <input type="checkbox" name="meat" id="ham" data-price="1.50" value="Ham">
                     <label for="ham">Ham</label>
                     <br>
-                    <input type="checkbox" name="meat" id="bacon" value="1.50">
+                    <input type="checkbox" name="meat" id="bacon" data-price="1.50" value="Bacon">
                     <label for="bacon">Bacon</label>
-                </form>
                 <br>
                 <p>What veggies would you like to add?($1.00 each)</p>
-                <form>
-                    <input type="checkbox" name="veggies" id="tomato" value="1.00">
+                    <input type="checkbox" name="veggies" id="tomato" data-price="1.00" value="Tomato">
                     <label for="tomato">Tomato</label>
                     <br>
-                    <input type="checkbox" name="veggies" id="mushroom" value="1.00">
+                    <input type="checkbox" name="veggies" id="mushroom" data-price="1.00" value="Mushroom">
                     <label for="mushroom">Mushroom</label>
                     <br>
-                    <input type="checkbox" name="veggies" id="spinach" value="1.00">
+                    <input type="checkbox" name="veggies" id="spinach" data-price="1.00" value="Spinach">
                     <label for="spinach">Spinach</label>
                     <br>
-                    <input type="checkbox" name="veggies" id="onion" value="1.00">
+                    <input type="checkbox" name="veggies" id="onion" data-price="1.00" value="Onion">
                     <label for="onion">Onion</label>
-                </form>
-                <img>
                 <br>
-                <button class="pizza-button">Submit Pizza Order</button>
-            </div>
+                <h4>Go to the next tab to enter your delivery information</h4>
+                </div>
 
-            <div class="tab-content">
                 <div id="delivery" class="tab-pane">
                     <h2>Enter Delivery Information</h2>
-                    <form>
                         <label for="name">Full Name</label>
                         <input type="text" name="delivery-info" id="name">
                         <br>
@@ -99,22 +88,41 @@
                         <br>
                         <label for="phone">Phone Number</label>
                         <input type="text" name="delivery-info" id="phone">
-                    </form>
                     <br>
-                    <button class="delivery-button">Submit Delivery Information</button>
+                    <h4>Go to the next tab and press the button to confirm your order</h4>
                 </div>
 
-                <div class="tab-content">
                     <div id="confirmation" class="tab-pane">
                         <h2>Order Confirmation</h2>
                         <br>
-                        <button id="confirmOrder">Confirm Order</button>
-                        <p id="confirmOutput"></p>
+                        <h3>Name for order:</h3>
+                        <p id="nameOutput"></p>
+
+                        <h3>Delivery Address:</h3>
+                        <p id="addressOutput"></p>
+
+                        <h3>Phone Number:</h3>
+                        <p id="phoneOutput"></p>
+
+                        <h3>Order Details:</h3>
+                        <p id="sizeOutput"></p>
+                        <p id="crustOutput"></p>
+                        <p id="meatOutput"></p>
+                        <p id="veggieOutput"></p>
+
+                        <h3>Order Total:</h3>
+                        <p id="subtotalOutput"></p>
+                        <p id="taxOutput"></p>
+                        <p id="deliveryFeeOutput"></p>
+                        <p id="totalOutput"></p>
+
+                        <p id="thanksMessage"></p>
+
+                        <button>Confirm Order</button>
                     </div>
-                </div>
             </div>
-    </div>
-</div>
+        </form>
+        </div>
     <!--jQuery-->
     <script src="jquery-3.5.1.js"></script>
    <!-- Bootstrap-->

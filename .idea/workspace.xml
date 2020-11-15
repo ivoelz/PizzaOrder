@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="501b6bc6-459e-4602-9e2b-be436109fdff" name="Default Changelist" comment="" />
+    <list default="true" id="501b6bc6-459e-4602-9e2b-be436109fdff" name="Default Changelist" comment="commit and push">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,12 +64,26 @@
       <updated>1604637429566</updated>
       <workItem from="1604637430764" duration="5813000" />
       <workItem from="1604970911899" duration="18000" />
-      <workItem from="1605302398350" duration="6965000" />
+      <workItem from="1605302398350" duration="11007000" />
+      <workItem from="1605407245820" duration="124000" />
+      <workItem from="1605459363578" duration="7145000" />
     </task>
+    <task id="LOCAL-00001" summary="commit and push">
+      <created>1605387363196</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605387363196</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit and push" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit and push" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1028" y="290" key="FileChooserDialogImpl" timestamp="1605304008441">
@@ -79,5 +98,9 @@
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state x="633" y="240" key="Github.UntrackedFilesDialog/0.0.1664.1069@0.0.1664.1069" timestamp="1605387174447" />
+    <state x="840" y="268" key="Vcs.Push.Dialog.v2" timestamp="1605387367244">
+      <screen x="0" y="0" width="1664" height="1069" />
+    </state>
+    <state x="840" y="268" key="Vcs.Push.Dialog.v2/0.0.1664.1069@0.0.1664.1069" timestamp="1605387367244" />
   </component>
 </project>
